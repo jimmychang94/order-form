@@ -1,10 +1,6 @@
 'use strict';
 
 BusMall.allImages = [];
-// var allImagesRetrieved = localStorage.getItem('allImages');
-// var allImages = JSON.parse(allImagesRetrieved);
-// var allImagesStringify = JSON.stringify(BusMall.allImages);
-// localStorage.setItem('allImages', allImagesStringify);
 var tableEl = document.getElementById('pictureDisplay');
 var selectEl = document.getElementById('selectDisplay');
 BusMall.nameArray = ['R2D2 Bag', 'Banana Slicer', 'Bathroom I-pad Holder', 'Open-Toed Rain Boots', 'All-in-One Breakfast Maker', 'Meatball Bubblegum', 'Dome Chair', 'Cthulu Doll', 'Duck-bill Dog', 'Freshly Slain Dragon Meat', 'Utensil Pens', 'Pet Sweep', 'Pizza Scissors', 'Shark Sleeping Bag', 'Baby Sweeper', 'Tauntaun Sleeping Bag', 'Packaged Unicorn Meat', 'Moving Tentacle USB', 'Self-filling Watering Can', 'Odd Wine Glass'];
@@ -89,10 +85,10 @@ function populateImages() {
   new BusMall('usb', 'img/usb.gif');
   new BusMall('water-can', 'img/water-can.jpg');
   new BusMall('wine-glass', 'img/wine-glass.jpg');
+  setTitle();
 }
 
 populateImages();
-setTitle();
 render();
 
 selectEl.addEventListener('change', handleEvent);

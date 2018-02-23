@@ -1,8 +1,35 @@
+* {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Russo One';
+  font-size: 50px;
+  margin: 30px;
+}
+
 table {
   text-align: center;
-  margin: auto;
+  margin: 30px auto;
 }
 
 img {
   width: 150px;
+}
+
+fieldset {
+  margin: auto;
+}
+
+li {
+  display: inline-block;
+}
+
+input {
+  margin: 5px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
